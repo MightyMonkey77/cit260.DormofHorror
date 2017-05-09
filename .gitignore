@@ -3,7 +3,15 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+#NetBeans Project files
+#######################
+*/build
+*/dist
+*/nbproject/private
+.Trashes
+ehthumbs.db
+Thumbs.db
+
 *.jar
 *.war
 *.ear
