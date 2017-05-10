@@ -6,6 +6,7 @@
 package dormofhorror;
 
 import cit260.dormofhorror.characters.Player;
+import cit260.dormofhorror.actingjob.Actor;
 
 /**
  *
@@ -16,8 +17,11 @@ public class DormofHorror {
      
     public static void main(String[] args) {
        Player playerOne = new Player();
+       Actor actorOne = new Actor();
+       
        
        playerOne.setName("Fred Flinstone");
+       
        
        String playerInfo = playerOne.toString();
        System.out.println(playerInfo);
