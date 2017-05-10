@@ -68,18 +68,17 @@ public class Actor {
         if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        if (!Objects.equals(this.description, other.description)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.description, other.description);
     }
 
     @Override
     public String toString() {
-        return "Actor{" + "name=" + name + ", description=" + description + ", coordinates=" + coordinates + '}';
+        return "Actor{" + "name=" + name + ", description=" + description + '}';
+    }   
+    
+    
     }
     
     
     
     
-}
