@@ -7,19 +7,19 @@ package dormofhorror;
 
 import cit260.dormofhorror.characters.Player;
 import cit260.dormofhorror.actingjob.Actor;
-
+import cit260.dormofhorror.mathamatics.Math;
 /**
  *
  * @author Office Payne
  */
 public class DormofHorror {
 
-     
+      //Not sure what to do with coordinates at this time.
     public static void main(String[] args) {
        Player playerOne = new Player();
        Actor actorOne = new Actor();
-       //Not sure what to do with coordinates at this time.
-       
+       Math equationOne = new Math();  
+             
        playerOne.setName("Fred Flinstone");
        actorOne.setName ("George Binazowski");
        actorOne.setDescription("You have been invited to spend an evening at a party"
@@ -33,12 +33,20 @@ public class DormofHorror {
                + "excuses himself and says he needs to check on another friend in another room to "
                + "see why they have not come over yet. After he is gone for 10 minuets the power "
                + "goes out. Now the fun begins.");
+       equationOne.setEquation ("Future Equation, insert here.");
+   
        
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
+       String equationInfo = equationOne.toString();
+
        
        System.out.println(playerInfo);
        System.out.println(actorInfo);
+       System.out.println(equationInfo);
+      
+       
     }
-    
+
+
 }
