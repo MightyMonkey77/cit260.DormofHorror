@@ -27,7 +27,7 @@ public class Math {
         this.equations = equations;
     }
 
-    public String setAnswers {
+    public String getAnswers() {
         return answers;
     }
 
