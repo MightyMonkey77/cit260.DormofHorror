@@ -8,6 +8,9 @@ package dormofhorror;
 import cit260.dormofhorror.characters.Player;
 import cit260.dormofhorror.actingjob.Actor;
 import cit260.dormofhorrors.mathematics.Math;
+import cit260.dormofhorror.tip.ClueScene;
+import cit260.dormofhorror.Tip_and_Math.tipandmath;
+
 /**
  *
  * @author Office Payne
@@ -20,8 +23,10 @@ public class DormofHorror {
        Actor actorOne = new Actor();
        Math equationsOne = new Math();
        Math answersOne = new Math();
+       ClueScene cluesOne = new ClueScene();
+       tipandmath clueByLocationOne = new tipandmath();
+       tipandmath equationByLocationOne = new tipandmath();
        
-      
        
        playerOne.setName("Fred Flinstone");
        actorOne.setName ("George Binazowski");
@@ -38,13 +43,19 @@ public class DormofHorror {
                + "\ngoes out. Now the fun begins.");
        equationsOne.setEquations("Here will be the equation");
        answersOne.setAnswers("Answers will be displayed here");
+       cluesOne.setClues ("Clues will be shown here");
+       clueByLocationOne.setClueByLocation ("Location of clue here");
+       equationByLocationOne.setClueByLocation ("Location of equation here");
        
        
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
        String equationsInfo = equationsOne.toString();
        String answersInfo = answersOne.toString();
-   
+       String cluesInfo = cluesOne.toString();
+       String clueByLocationInfo = clueByLocationOne.toString();
+       
+       
      
 
        
@@ -52,6 +63,8 @@ public class DormofHorror {
        System.out.println(actorInfo);
        System.out.println(equationsInfo);
        System.out.println(answersInfo);
+       System.out.println(cluesInfo);
+       System.out.println(clueByLocationInfo);
       
        
       
