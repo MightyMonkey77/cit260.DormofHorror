@@ -13,14 +13,16 @@ import java.util.Objects;
  */
 public class tipandmath {
 
-    public tipandmath(String clueByLocation, String equationBylocation) {
-        this.clueByLocation = clueByLocation;
-        this.equationBylocation = equationBylocation;
-    }
-    
+  
+      
         
     private String clueByLocation;
     private String equationBylocation;
+
+    public tipandmath() {
+    }
+
+    
 
     public String getClueByLocation() {
         return clueByLocation;
