@@ -12,12 +12,12 @@ import java.util.Objects;
  * @author Office Payne
  */
 public class Math {
+    private String equations;
+    private String answsers;
 
     public Math() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-           
-    private String equations;
-    private String answers;
 
     public String getEquations() {
         return equations;
@@ -27,19 +27,24 @@ public class Math {
         this.equations = equations;
     }
 
-    public String getAnswers() {
-        return answers;
+    public String getAnswsers() {
+        return answsers;
     }
 
-    public void setAnswers(String answers) {
-        this.answers = answers;
+    public void setAnswsers(String answsers) {
+        this.answsers = answsers;
+    }
+
+    public Math(String equations, String answsers) {
+        this.equations = equations;
+        this.answsers = answsers;
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 53 * hash + Objects.hashCode(this.equations);
-        hash = 53 * hash + Objects.hashCode(this.answers);
+        int hash = 5;
+        hash = 13 * hash + Objects.hashCode(this.equations);
+        hash = 13 * hash + Objects.hashCode(this.answsers);
         return hash;
     }
 
@@ -58,21 +63,15 @@ public class Math {
         if (!Objects.equals(this.equations, other.equations)) {
             return false;
         }
-        return Objects.equals(this.answers, other.answers);
+        return Objects.equals(this.answsers, other.answsers);
     }
 
     @Override
     public String toString() {
-        return "Math{" + "equations=" + equations + ", answers=" + answers + '}';
-    }
-
-    public void setEquation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setEquation(String future_Equation_insert_here) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Math{" + "equations=" + equations + ", answsers=" + answsers + '}';
     }
     
     
+   
+   
 }
