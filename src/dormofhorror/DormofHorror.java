@@ -7,7 +7,7 @@ package dormofhorror;
 
 import cit260.dormofhorror.characters.Player;
 import cit260.dormofhorror.actingjob.Actor;
-import cit260.dormofhorrors.mathematics.Math;
+import cit260.dormofhorror.mathematics.Math;
 import cit260.dormofhorror.tip.ClueScene;
 import cit260.dormofhorror.Tip_and_Math.tipandmath;
 
