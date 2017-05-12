@@ -7,8 +7,7 @@ package dormofhorror;
 
 import cit260.dormofhorror.characters.Player;
 import cit260.dormofhorror.actingjob.Actor;
-import cit260.dormofhorror.mathamatics.Math;
-
+import cit260.dormofhorrors.mathematics.Math;
 /**
  *
  * @author Office Payne
@@ -20,6 +19,7 @@ public class DormofHorror {
        Player playerOne = new Player();
        Actor actorOne = new Actor();
        Math equationsOne = new Math();
+       Math answersOne = new Math();
        
       
        
@@ -36,18 +36,23 @@ public class DormofHorror {
                + "\nexcuses himself and says he needs to check on another friend in another room to "
                + "\nsee why they have not come over yet. After he is gone for 10 minuets the power "
                + "\ngoes out. Now the fun begins.");
-       equationsOne.setEquations ("Future Equation, insert here.");
+       equationsOne.setEquations("Here will be the equation");
+       answersOne.setAnswers("Answers will be displayed here");
        
        
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
        String equationsInfo = equationsOne.toString();
+       String answersInfo = answersOne.toString();
+   
      
 
        
        System.out.println(playerInfo);
        System.out.println(actorInfo);
        System.out.println(equationsInfo);
+       System.out.println(answersInfo);
+      
        
       
        
