@@ -17,6 +17,9 @@ public class Math implements Serializable {
     private String equations;
     private String answers;
 
+    public Math() {
+    }
+        
     public String getEquations() {
         return equations;
     }
@@ -31,14 +34,10 @@ public class Math implements Serializable {
 
     public void setAnswers(String answers) {
         this.answers = answers;
+       
     }
 
-    public Math(String equations, String answers) {
-        this.equations = equations;
-        this.answers = answers;
-    }
-
-    @Override
+     @Override
     public int hashCode() {
         int hash = 7;
         hash = 97 * hash + Objects.hashCode(this.equations);
