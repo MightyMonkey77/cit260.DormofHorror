@@ -5,13 +5,14 @@
  */
 package byui.cit260.DormofHorror.Tip;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author Office Payne
  */
-public class ClueScene {
+public class ClueScene implements Serializable {
 
     public ClueScene() {
     }
