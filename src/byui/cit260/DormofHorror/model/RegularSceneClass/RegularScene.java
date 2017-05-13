@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byu.cit260.DormofHorror.model.RegularSceneClass;
+package byui.cit260.DormofHorror.model.RegularSceneClass;
 
 import java.io.Serializable;
 import java.util.Objects;
