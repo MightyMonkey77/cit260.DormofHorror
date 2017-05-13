@@ -5,12 +5,14 @@
  */
 package dormofhorror;
 
-import byui.cit260.DormofHorror.Characters.Player;
-import byui.cit260.DormofHorror.ActingJob.Actor;
-import byui.cit260.DormofHorror.Mathematics.Math;
-import byui.cit260.DormofHorror.Tip.ClueScene;
-import byui.cit260.DormofHorror.Tip_and_Math.tipandmath;
-
+import byui.cit260.DormofHorror.model.Characters.Player;
+import byui.cit260.DormofHorror.model.ActingJob.Actor;
+import byui.cit260.DormofHorror.model.InventoryClass.Inventory;
+import byui.cit260.DormofHorror.model.MapClass.Map;
+import byui.cit260.DormofHorror.model.Mathematics.Math;
+import byui.cit260.DormofHorror.model.Tip.ClueScene;
+import byui.cit260.DormofHorror.model.Tip_and_Math.tipandmath;
+import byui.cit260.DormofHorror.model.Resource.Resource;
 /**
  *
  * @author Office Payne
@@ -26,7 +28,10 @@ public class DormofHorror {
        ClueScene cluesOne = new ClueScene();
        tipandmath clueByLocationOne = new tipandmath();
        tipandmath equationByLocationOne = new tipandmath();
-       
+       Resource itemOne = new Resource();
+       Inventory backpack = new Inventory();
+       Map dormLayout = new Map();
+      
        
        playerOne.setName("Fred Flinstone");
        actorOne.setName ("George Binazowski");
@@ -46,7 +51,11 @@ public class DormofHorror {
        cluesOne.setClues ("Clues will be shown here");
        clueByLocationOne.setClueByLocation ("Location of clue here");
        equationByLocationOne.setClueByLocation ("Location of equation here");
+       itemOne.setAmount(1);
+       backpack.setInventoryType("satchel");
+       dormLayout.setDescription("blueprint");
        
+  
        
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
@@ -54,6 +63,9 @@ public class DormofHorror {
        String answersInfo = answersOne.toString();
        String cluesInfo = cluesOne.toString();
        String clueByLocationInfo = clueByLocationOne.toString();
+       String resourceInfo = itemOne.toString();
+       String inventoryInfo = backpack.toString();
+       String mapInfo = dormLayout.toString();
        
        
      
@@ -65,7 +77,9 @@ public class DormofHorror {
        System.out.println(answersInfo);
        System.out.println(cluesInfo);
        System.out.println(clueByLocationInfo);
-      
+       System.out.println(resourceInfo);
+       System.out.println(inventoryInfo);
+       System.out.println(mapInfo);
        
       
        
