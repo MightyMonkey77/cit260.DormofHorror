@@ -12,8 +12,7 @@ package byui.cit260.DormofHorror.model.LocationClass;
 import java.io.Serializable;
 
 /**
- *
- * @author CNTin
+ * @Ctin
  */
 public class Location implements Serializable {
     

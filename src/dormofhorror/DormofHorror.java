@@ -14,7 +14,11 @@ import byui.cit260.DormofHorror.model.Tip.ClueScene;
 import byui.cit260.DormofHorror.model.Tip_and_Math.tipandmath;
 import byui.cit260.DormofHorror.model.Resource.Resource;
 /**
- *
+ * Associates: Carmen, Tinker Ricardo, Herrera Daryl Payne
+ * Carmen responsibility: Game, Regular Scene and Location classes
+ * Ricardo responsibility: Inventory, Resources and Map
+ * Daryl responsibility: Actor, Clue, Equation and Clue&Equation
+ * 
  * @author Office Payne
  */
 public class DormofHorror {
