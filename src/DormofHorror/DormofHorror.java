@@ -7,6 +7,7 @@ package dormofhorror;
 
 import byui.cit260.DormofHorror.model.Characters.Player;
 import byui.cit260.DormofHorror.model.ActingJob.Actor;
+import byui.cit260.DormofHorror.model.Game.Game;
 import byui.cit260.DormofHorror.model.InventoryClass.Inventory;
 import byui.cit260.DormofHorror.model.LocationClass.Location;
 import byui.cit260.DormofHorror.model.MapClass.Map;
@@ -15,6 +16,7 @@ import byui.cit260.DormofHorror.model.RegularSceneClass.RegularScene;
 import byui.cit260.DormofHorror.model.Tip.ClueScene;
 import byui.cit260.DormofHorror.model.Tip_and_Math.tipandmath;
 import byui.cit260.DormofHorror.model.Resource.Resource;
+
 
 /**
  * Associates: Carmen, Tinker Ricardo, Herrera Daryl Payne
@@ -40,6 +42,8 @@ public class DormofHorror {
        Map dormLayout = new Map();
        RegularScene sceneOne = new RegularScene();
        Location locationOne = new Location();  
+       Game dormGame = new Game();
+       
       
        playerOne.setName("Fred Flinstone");
        actorOne.setName ("George Binazowski");
@@ -64,7 +68,8 @@ public class DormofHorror {
        dormLayout.setDescription("blueprint");
        sceneOne.setDescription("Scene X");
        locationOne.setRoomsRemaining(2);
-  
+       dormGame.setSanityPoints(4);
+       
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
        String equationsInfo = equationsOne.toString();
@@ -76,7 +81,7 @@ public class DormofHorror {
        String mapInfo = dormLayout.toString();
        String sceneInfo = sceneOne.toString();
        String locationInfo = locationOne.toString();       
-
+       String gameInfo = dormGame.toString();
        
        System.out.println(playerInfo);
        System.out.println(actorInfo);
@@ -89,6 +94,7 @@ public class DormofHorror {
        System.out.println(mapInfo);
        System.out.println(sceneInfo);
        System.out.println(locationInfo);
+       System.out.println(dormGame);
       
        
     }
