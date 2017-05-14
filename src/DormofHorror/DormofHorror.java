@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DormofHorror;
-
-import java.io.Serializable;
+package dormofhorror;
 
 import byui.cit260.DormofHorror.model.Characters.Player;
 import byui.cit260.DormofHorror.model.ActingJob.Actor;
 import byui.cit260.DormofHorror.model.InventoryClass.Inventory;
+import byui.cit260.DormofHorror.model.LocationClass.Location;
 import byui.cit260.DormofHorror.model.MapClass.Map;
 import byui.cit260.DormofHorror.model.Mathematics.Math;
+import byui.cit260.DormofHorror.model.RegularSceneClass.RegularScene;
 import byui.cit260.DormofHorror.model.Tip.ClueScene;
 import byui.cit260.DormofHorror.model.Tip_and_Math.tipandmath;
 import byui.cit260.DormofHorror.model.Resource.Resource;
+
 /**
  * Associates: Carmen, Tinker Ricardo, Herrera Daryl Payne
  * Carmen responsibility: Game, Regular Scene and Location classes
@@ -23,7 +24,7 @@ import byui.cit260.DormofHorror.model.Resource.Resource;
  * 
  * @author Office Payne
  */
-public class DormofHorror implements Serializable {
+public class DormofHorror {
 
       //Not sure what to do with coordinates at this time.
     public static void main(String[] args) {
@@ -37,8 +38,9 @@ public class DormofHorror implements Serializable {
        Resource itemOne = new Resource();
        Inventory backpack = new Inventory();
        Map dormLayout = new Map();
+       RegularScene sceneOne = new RegularScene();
+       Location locationOne = new Location();  
       
-       
        playerOne.setName("Fred Flinstone");
        actorOne.setName ("George Binazowski");
        actorOne.setDescription("You have been invited to spend an evening at a party"
@@ -60,9 +62,9 @@ public class DormofHorror implements Serializable {
        itemOne.setAmount(1);
        backpack.setInventoryType("satchel");
        dormLayout.setDescription("blueprint");
-       
+       sceneOne.setDescription("Scene X");
+       locationOne.setRoomsRemaining(2);
   
-       
        String playerInfo = playerOne.toString();
        String actorInfo = actorOne.toString();
        String equationsInfo = equationsOne.toString();
@@ -72,9 +74,8 @@ public class DormofHorror implements Serializable {
        String resourceInfo = itemOne.toString();
        String inventoryInfo = backpack.toString();
        String mapInfo = dormLayout.toString();
-       
-       
-     
+       String sceneInfo = sceneOne.toString();
+       String locationInfo = locationOne.toString();       
 
        
        System.out.println(playerInfo);
@@ -86,7 +87,8 @@ public class DormofHorror implements Serializable {
        System.out.println(resourceInfo);
        System.out.println(inventoryInfo);
        System.out.println(mapInfo);
-       
+       System.out.println(sceneInfo);
+       System.out.println(locationInfo);
       
        
     }
