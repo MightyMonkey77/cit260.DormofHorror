@@ -70,6 +70,10 @@ public class RegularScene implements Serializable{
     public String toString() {
         return "RegularScene{" + "description=" + description + ", isBlocked=" + isBlocked + '}';
     }
+
+    public void setScene(String scene_X) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
