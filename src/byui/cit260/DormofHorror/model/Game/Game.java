@@ -72,5 +72,12 @@ public class Game implements Serializable {
         return "Game{" + "sanityPoints=" + sanityPoints + ", time=" + time + '}';
     }
     
+    public void setStart(String new_Game) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setSanity(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
