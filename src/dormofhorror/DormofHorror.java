@@ -7,15 +7,18 @@ package dormofhorror;
 
 import byui.cit260.DormofHorror.model.Characters.Player;
 import byui.cit260.DormofHorror.model.ActingJob.Actor;
+import byui.cit260.DormofHorror.model.Game.Game;
 import byui.cit260.DormofHorror.model.InventoryClass.Inventory;
+import byui.cit260.DormofHorror.model.LocationClass.Location;
 import byui.cit260.DormofHorror.model.MapClass.Map;
 import byui.cit260.DormofHorror.model.Mathematics.Math;
+import byui.cit260.DormofHorror.model.RegularSceneClass.RegularScene;
 import byui.cit260.DormofHorror.model.Tip.ClueScene;
 import byui.cit260.DormofHorror.model.Tip_and_Math.tipandmath;
 import byui.cit260.DormofHorror.model.Resource.Resource;
 /**
- * Associates: Carmen, Tinker Ricardo, Herrera Daryl Payne
- * Carmen responsibility: Game, Regular Scene and Location classes
+ * Associates: Camren, Tinker Ricardo, Herrera Daryl Payne
+ * Camren responsibility: Game, Regular Scene and Location classes
  * Ricardo responsibility: Inventory, Resources and Map
  * Daryl responsibility: Actor, Clue, Equation and Clue&Equation
  * 
@@ -35,6 +38,9 @@ public class DormofHorror {
        Resource itemOne = new Resource();
        Inventory backpack = new Inventory();
        Map dormLayout = new Map();
+       Game gameOne = new Game();
+       Location roomOne = new Location();
+       RegularScene regularSceneOne = new RegularScene();
       
        
        playerOne.setName("Fred Flinstone");
@@ -58,7 +64,15 @@ public class DormofHorror {
        itemOne.setAmount(1);
        backpack.setInventoryType("satchel");
        dormLayout.setDescription("blueprint");
-       
+       gameOne.setTime(0);
+       gameOne.setSanityPoints(100);
+       roomOne.setColumn(1);
+       roomOne.setRow(1);
+       roomOne.setVisited(true);
+       roomOne.setRoomsRemaining(24);
+       regularSceneOne.setDescription("This is a scene for testing purposes. " + 
+               "Should you see this scene, that means that the test worked!");
+       regularSceneOne.setIsBlocked(false);
   
        
        String playerInfo = playerOne.toString();
@@ -70,7 +84,10 @@ public class DormofHorror {
        String resourceInfo = itemOne.toString();
        String inventoryInfo = backpack.toString();
        String mapInfo = dormLayout.toString();
-       
+       String gameInfo = gameOne.toString();
+       String locationInfo = roomOne.toString();
+       String regularSceneTest = regularSceneOne.toString();
+
        
      
 
@@ -84,7 +101,9 @@ public class DormofHorror {
        System.out.println(resourceInfo);
        System.out.println(inventoryInfo);
        System.out.println(mapInfo);
-       
+       System.out.println(gameInfo);
+       System.out.println(locationInfo);
+       System.out.println(regularSceneTest);
       
        
     }
