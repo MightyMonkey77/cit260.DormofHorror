@@ -28,6 +28,7 @@ public class DormofHorror {
 
       //Not sure what to do with coordinates at this time.
     public static void main(String[] args) {
+        // System Objects
        Player playerOne = new Player();
        Actor actorOne = new Actor();
        Math equationsOne = new Math();
