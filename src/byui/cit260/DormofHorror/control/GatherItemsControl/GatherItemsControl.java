@@ -11,4 +11,4 @@ package byui.cit260.DormofHorror.control.GatherItemsControl;
  */
 public class GatherItemsControl {
     
-}
+}  
