@@ -11,10 +11,10 @@ public class EquationControl {
     
     public double calcUrnVolume(double radius, double height){
         
-        if (height != 12.5) {
+        if (height < 12.0 || height > 12.0) {
             return -1;
         }
-        if (radius != 3.7) {
+        if (radius < 4.0  || radius > 4.0) {
             return -1;
         }
         
