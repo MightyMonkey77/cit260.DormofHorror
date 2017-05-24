@@ -10,5 +10,5 @@ package byui.cit260.DormofHorror.control.MapControl;
  * @author Office Payne
  */
 public class MapControl {
-    
 }
+  
