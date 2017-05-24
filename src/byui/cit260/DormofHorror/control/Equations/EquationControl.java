@@ -7,18 +7,18 @@ package byui.cit260.DormofHorror.control.Equations;
 
 
 
-
 public class EquationControl {
     
     public double calcUrnVolume(double radius, double height){
         
-        if (height > 12.5 || height < 12.5) {
+        if (height != 12.5) {
             return -1;
         }
-        if (radius > 3.7 || radius < 3.7) {
+        if (radius != 3.7) {
             return -1;
-        }    
-        double volume = Math.PI * Math.pow(radius,2) * height;
+        }
+        
+        double volume = Math.PI * (radius * radius) * height;
         return volume;
         }
          
