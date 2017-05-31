@@ -22,7 +22,7 @@ public class DormofHorror {
     
     private static Game currentGame = null;
     private static Player player = null;
-
+    
     public static Game getCurrentGame() {
         return currentGame;
     }
