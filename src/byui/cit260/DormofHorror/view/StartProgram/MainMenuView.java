@@ -5,6 +5,8 @@
  */
 package byui.cit260.DormofHorror.view.StartProgram;
 
+import byui.cit260.DormofHorror.control.GameControl.GameControl;
+import dormofhorror.DormofHorror;
 import java.util.Scanner;
 
 /**
@@ -12,25 +14,22 @@ import java.util.Scanner;
  * @author Office Payne
  */
 public class MainMenuView {
-    
+           
     private final String menu;
 
     public MainMenuView() {
         this.menu = "\n"
-                  + "\n +++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-                  + "\n | Main Menu                                           |"
-                  + "\n +++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-                  + "\n N - Start New Game"
-                  + "\n G - Return to Game from a save"
-                  + "\n H - Help Menu"
-                  + "\n S - Save your game"
-                  + "\n Q - Quit your current game session"
-                  + "\n +++++++++++++++++++++++++++++++++++++++++++++++++++++++";
+                  + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+                  + "\n| Main Menu                                           |"
+                  + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+                  + "\nN - Start New Game"
+                  + "\nG - Return to Game from a save"
+                  + "\nH - Help Menu"
+                  + "\nS - Save your game"
+                  + "\nQ - Quit your current game session"
+                  + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++";
     }
-    
-    
-
-   public void displayMainMenuView() {
+      public void displayMainMenuView() {
         boolean done = false;
         do {
             //prompt for option and name
@@ -43,7 +42,7 @@ public class MainMenuView {
         }
         while (!done);
     }
-
+    
     private String getMenuOption() {
           Scanner keyboard = new Scanner(System.in); //get infile from keyboard
         String value = "";
@@ -56,7 +55,7 @@ public class MainMenuView {
             value = keyboard.nextLine();
             value = value.trim();
             
-            if (value.length() < 1) {
+            if (value.length() < 0) {
                 
                 System.out.println("\nInvalid value: Cannot be blank.");
                 continue;
@@ -83,6 +82,7 @@ public class MainMenuView {
             case "S": // Saves your current game
                 this.saveGame();
                 break;
+            
             default:
                 System.out.println("\n Invalid selection. Try again.");
                 break;
@@ -91,20 +91,24 @@ public class MainMenuView {
     }
 
     private void startNewGame() {
-       System.out.println("N");
-      
+        //Creation of new game
+       GameControl.createNewGame(DormofHorror.getPlayer());
+       //Fetching the game menu
+       GameMenuView gameMenu = new GameMenuView();
+       gameMenu.displayMenu();
     }
 
     private void startExistingGame() {
-        System.out.println("G");
+        System.out.println("G-Saved Game Return");
     }
 
     private void displayHelpMenu() {
-        System.out.println("H"); 
+        System.out.println("H-Help Menu"); 
     }
 
     private void saveGame() {
-         System.out.println("S");
+         System.out.println("S-Save Current Game");
     }
-    
+
 }
+   
