@@ -8,7 +8,6 @@ package dormofhorror;
 import byui.cit260.DormofHorror.model.Characters.Player;
 import byui.cit260.DormofHorror.model.Game.Game;
 import byui.cit260.DormofHorror.view.StartProgram.StartGame;
-import byui.cit260.DormofHorror.view.StartProgram.MainMenuView;
 
 
 /**
