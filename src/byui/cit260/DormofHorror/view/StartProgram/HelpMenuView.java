@@ -5,8 +5,6 @@
  */
 package byui.cit260.DormofHorror.view.StartProgram;
 
-import byui.cit260.DormofHorror.control.GameControl.GameControl;
-import dormofhorror.DormofHorror;
 import java.util.Scanner;
 
 /**
@@ -29,7 +27,7 @@ public class HelpMenuView {
                   + "\nQ - Quit the Help Menu"
                   + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++";
     }
-      public void displayMainMenuView() {
+      public void displayHelpMenuView() {
         boolean done = false;
         do {
             //prompt for option and name

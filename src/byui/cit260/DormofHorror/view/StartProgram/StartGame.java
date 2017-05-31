@@ -119,7 +119,7 @@ public class StartGame {
         
         HelpMenuView helpMenuView = new HelpMenuView();
         // Help Menu
-        helpMenuView.displayMainMenuView();
+        helpMenuView.displayHelpMenuView();
         }
        
     }
