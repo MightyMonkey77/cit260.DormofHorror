@@ -5,10 +5,26 @@
  */
 package byui.cit260.DormofHorror.control.GameControl;
 
+import byui.cit260.DormofHorror.model.Characters.Player;
+import dormofhorror.DormofHorror;
+
 /**
  *
  * @author Office Payne
  */
 public class GameControl {
+
+    public static Player createPlayer(String name) {
+        if (name == null) {
+            return null;          
+        }
+        
+        Player player = new Player();
+        player.setName(name);
+        
+        DormofHorror.setPlayer(player);
+        
+        return player;
+    }
     
 }
