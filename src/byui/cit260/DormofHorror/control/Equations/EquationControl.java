@@ -37,7 +37,7 @@ public class EquationControl {
             return -1;
         }
       
-        double distance = (Math.sqrt(Math.pow(point1 -point2),2) + Math.pow((point3 - point4),2));
+        double distance = Math.sqrt(((point1 -point2) * (point1 -point2)) + Math.pow((point3 - point4),2));
         return distance;
     }
      

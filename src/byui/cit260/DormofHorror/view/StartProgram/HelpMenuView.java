@@ -28,6 +28,7 @@ public class HelpMenuView {
                   + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++";
     }
       public void displayHelpMenuView() {
+          System.out.println(helpMenu);
         boolean done = false;
         do {
             //prompt for option and name
@@ -85,7 +86,7 @@ public class HelpMenuView {
                 System.out.println("\n Invalid selection. Try again.");
                 break;
         }
-        return false;
+        return true;
     }
 
     private void clueGatheringHelp() {

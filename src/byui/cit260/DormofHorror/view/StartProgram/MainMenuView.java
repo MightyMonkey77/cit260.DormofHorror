@@ -30,6 +30,7 @@ public class MainMenuView {
                   + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++";
     }
       public void displayMainMenuView() {
+          System.out.println(menu);
         boolean done = false;
         do {
             //prompt for option and name
@@ -37,9 +38,8 @@ public class MainMenuView {
             if (menuOption.toUpperCase().equals("Q")) //quit function
                 return; // exits the game
             
-            done = this.doAction(menuOption);
-            
-        }
+            done = this.doAction(menuOption);           
+        }                
         while (!done);
     }
     
@@ -87,7 +87,7 @@ public class MainMenuView {
                 System.out.println("\n Invalid selection. Try again.");
                 break;
         }
-        return false;
+        return true;
     }
 
     private void startNewGame() {
