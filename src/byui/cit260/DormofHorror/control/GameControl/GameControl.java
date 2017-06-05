@@ -30,5 +30,5 @@ public class GameControl {
     public static void createNewGame(Player player) {
         System.out.println("Future Home of new Game Creation");
     }
-    
+        
 }

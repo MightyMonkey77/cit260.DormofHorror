@@ -10,19 +10,19 @@ import java.util.Objects;
 
 /**
  *
- * @author RJrHerrera
+ * @author DPayne
  */
 public class Map implements Serializable{
     private String description;
-    private double rowCount;
-    private double columnCount;
-    private int currentRow;
-    private int currentColumn;
+    private int x;
+    private int y;
+    private int currentX;
+    private int currentY;
 
     public Map() {
+        
     }
-    
-    
+
     public String getDescription() {
         return description;
     }
@@ -31,55 +31,49 @@ public class Map implements Serializable{
         this.description = description;
     }
 
-    public double getRowCount() {
-        return rowCount;
+    public int getX() {
+        return x;
     }
 
-    public void setRowCount(double rowCount) {
-        this.rowCount = rowCount;
+    public void setX(int x) {
+        this.x = x;
     }
 
-    public double getColumnCount() {
-        return columnCount;
+    public int getY() {
+        return y;
     }
 
-    public void setColumnCount(double columnCount) {
-        this.columnCount = columnCount;
+    public void setY(int y) {
+        this.y = y;
     }
 
-    public int getCurrentRow() {
-        return currentRow;
+    public int getCurrentX() {
+        return currentX;
     }
 
-    public void setCurrentRow(int currentRow) {
-        this.currentRow = currentRow;
+    public void setCurrentX(int currentX) {
+        this.currentX = currentX;
     }
 
-    public int getCurrentColumn() {
-        return currentColumn;
+    public int getCurrentY() {
+        return currentY;
     }
 
-    public void setCurrentColumn(int currentColumn) {
-        this.currentColumn = currentColumn;
+    public void setCurrentY(int currentY) {
+        this.currentY = currentY;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + Objects.hashCode(this.description);
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.rowCount) ^ (Double.doubleToLongBits(this.rowCount) >>> 32));
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.columnCount) ^ (Double.doubleToLongBits(this.columnCount) >>> 32));
-        hash = 59 * hash + this.currentRow;
-        hash = 59 * hash + this.currentColumn;
+        hash = 53 * hash + Objects.hashCode(this.description);
+        hash = 53 * hash + this.x;
+        hash = 53 * hash + this.y;
+        hash = 53 * hash + this.currentX;
+        hash = 53 * hash + this.currentY;
         return hash;
     }
 
-    @Override
-    public String toString() {
-        return "Map{" + "description=" + description + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", currentRow=" + currentRow + ", currentColumn=" + currentColumn + '}';
-    }
-
-    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -92,23 +86,21 @@ public class Map implements Serializable{
             return false;
         }
         final Map other = (Map) obj;
-        if (Double.doubleToLongBits(this.rowCount) != Double.doubleToLongBits(other.rowCount)) {
+        if (this.x != other.x) {
             return false;
         }
-        if (Double.doubleToLongBits(this.columnCount) != Double.doubleToLongBits(other.columnCount)) {
+        if (this.y != other.y) {
             return false;
         }
-        if (this.currentRow != other.currentRow) {
+        if (this.currentX != other.currentX) {
             return false;
         }
-        if (this.currentColumn != other.currentColumn) {
+        if (this.currentY != other.currentY) {
             return false;
         }
-        if (!Objects.equals(this.description, other.description)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.description, other.description);
+    }
+    
     }
     
     
-}

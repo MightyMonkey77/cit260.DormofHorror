@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class Game implements Serializable {
     
     // class instance variables
-    private int sanityPoints;
+    
     private int time;
 
     public Game() {
@@ -22,14 +22,7 @@ public class Game implements Serializable {
     
     // class functions
 
-    public int getSanityPoints() {
-        return sanityPoints;
-    }
-
-    public void setSanityPoints(int sanityPoints) {
-        this.sanityPoints = sanityPoints;
-    }
-
+    
     public int getTime() {
         return time;
     }
@@ -41,7 +34,6 @@ public class Game implements Serializable {
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 17 * hash + this.sanityPoints;
         hash = 17 * hash + this.time;
         return hash;
     }
@@ -58,26 +50,14 @@ public class Game implements Serializable {
             return false;
         }
         final Game other = (Game) obj;
-        if (this.sanityPoints != other.sanityPoints) {
-            return false;
-        }
-        if (this.time != other.time) {
-            return false;
-        }
-        return true;
+        
+        return this.time == other.time;
     }
 
-    @Override
-    public String toString() {
-        return "Game{" + "sanityPoints=" + sanityPoints + ", time=" + time + '}';
-    }
-    
     public void setStart(String new_Game) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setSanity(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }
