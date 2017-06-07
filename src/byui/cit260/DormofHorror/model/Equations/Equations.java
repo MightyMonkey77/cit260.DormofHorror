@@ -68,10 +68,7 @@ public class Equations implements Serializable {
     }
 
     public void setEquation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Future Home of Setting the equation");
     }
-
-    public void setEquation(String future_Equation_insert_here) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }
