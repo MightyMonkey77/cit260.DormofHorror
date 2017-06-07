@@ -7,15 +7,13 @@ package dormofhorror;
 
 import byui.cit260.DormofHorror.model.Characters.Player;
 import byui.cit260.DormofHorror.model.Game.Game;
+import byui.cit260.DormofHorror.view.StartProgram.EquationView;
 import byui.cit260.DormofHorror.view.StartProgram.StartGame;
 
 
-/**
- * Associates: Camren, Tinker Ricardo, Herrera Daryl Payne
- * Camren responsibility: Game, Regular Scene and Location classes
- * Ricardo responsibility: Inventory, Resources and Map
- * Daryl responsibility: Actor, Clue, Equation and Clue&Equation
- * 
+/*
+ * Update 6/5/17 I do not have any teammates yet I still have to do team work
+ * and continue this all alone. Woot!!!!!
  * @author Office Payne
  */
 public class DormofHorror {
@@ -46,6 +44,7 @@ public class DormofHorror {
         // System Objects
         StartGame startGame = new StartGame();
         startGame.displayStartGame();
+       
         
     
        
