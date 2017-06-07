@@ -9,10 +9,14 @@ package byui.cit260.DormofHorror.view.StartProgram;
  *
  * @author Office Payne
  */
-public class RoomView {
+public class EquationView {
+   
     
-    public RoomView() {
-         
-        
-    }
+public EquationView(){
+   
+ 
+   }
+public void displayEquationView(){
+    
+}
 }
