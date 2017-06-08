@@ -42,7 +42,7 @@ public class MapView {
 		// index rows up to 18 to continue to next
 		for (int y = 0; y < 24; y++) {
 			
-
+                // if statements for starting num and door expression
 		if (drawDormRooms[x][y] == "0") {
 			System.out.print(" ");
 		}
