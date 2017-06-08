@@ -111,16 +111,13 @@ public class StartGame {
         MainMenuView mainMenuView = new MainMenuView();
         // Main menuy object        
         mainMenuView.displayMainMenuView();
-        
-                System.out.println("\n**************************************************"
-                         + "\n Welcome to the help menu options " + player.getName()
-                         + "\n Make your selection below"
-                         + "\n *************************************************");
-        
-        HelpMenuView helpMenuView = new HelpMenuView();
-        // Help Menu
-        helpMenuView.displayHelpMenuView();
+               
         }
+    private void displayMapView(Player player){
+        MapView mapView = new MapView();
+        
+    } 
+   
        
     }
 

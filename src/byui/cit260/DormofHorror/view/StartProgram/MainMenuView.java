@@ -26,6 +26,7 @@ public class MainMenuView {
                   + "\nG - Return to Game from a save"
                   + "\nH - Help Menu"
                   + "\nS - Save your game"
+                  + "\nM - Show the Map"
                   + "\nQ - Quit your current game session"
                   + "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++";
     }
@@ -82,6 +83,8 @@ public class MainMenuView {
             case "S": // Saves your current game
                 this.saveGame();
                 break;
+            case "M": //Map view
+                this.displayMapView();
             
             default:
                 System.out.println("\n Invalid selection. Try again.");
@@ -103,11 +106,21 @@ public class MainMenuView {
     }
 
     private void displayHelpMenu() {
-        System.out.println("H-Help Menu"); 
+        System.out.println("\n**************************************************"
+                         + "\n Welcome to the help menu options " + DormofHorror.getPlayer().getName()
+                         + "\n Make your selection below"
+                         + "\n *************************************************");
+        HelpMenuView helpMenu = new HelpMenuView();
+        helpMenu.displayHelpMenuView();
     }
 
     private void saveGame() {
          System.out.println("S-Save Current Game");
+    }
+
+    private void displayMapView() {
+        MapView mapView = new MapView();
+        
     }
 
 }
